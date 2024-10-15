@@ -1,0 +1,7 @@
+{
+  "name": "nexion-pruebatecnica",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
