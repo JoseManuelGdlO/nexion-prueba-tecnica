@@ -30,4 +30,4 @@ Este proyecto es una aplicación web móvil construida con **Ionic** y **Angular
 1. **Clonar el repositorio**:
 
    ```bash
-   git clone https://github.com/tu_usuario/nombre_del_repositorio.git
+   git clone https://github.com/JoseManuelGdlO/nexion-prueba-tecnica.git
