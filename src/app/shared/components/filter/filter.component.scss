@@ -1,0 +1,59 @@
+.header {
+    position: fixed;
+    z-index: 15;
+}
+
+.toolbar {
+    padding-top: 10px;
+    &___grid {
+        padding: 0;
+        margin: 0;
+        &___row {
+            padding: 0;
+            margin: 0;
+            &___col {
+                padding-top: 2px;
+                &___icon {
+                    width: 40px;
+                    height: 40px;
+                    transition: opacity 0.3s;
+                }
+                &___icon:active {
+                    opacity: 30%;
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    position: absolute;
+    &___content {
+        &___col {
+            padding-top: 10px;
+            text-align: left;
+            padding-left: 0;
+        }
+
+        &___row {
+            padding: 0 10px;
+            &____title {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        &___title {
+            padding: 0 10px;
+            margin: 10px 0 10px 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+}
+  
+  
+  
+  
+  
+  

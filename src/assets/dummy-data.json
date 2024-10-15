@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "product": "Cocacola",
+        "category": "refrescos",
+        "add_date": "2023-12-15" 
+    },
+    {
+        "id": 2,
+        "product": "Pepsi",
+        "category": "refrescos",
+        "add_date": "2023-12-15" 
+    },
+    {
+        "id": 3,
+        "product": "Fanta",
+        "category": "refrescos",
+        "add_date": "2023-12-02" 
+    },
+    {
+        "id": 4,
+        "product": "Sprite",
+        "category": "refrescos",
+        "add_date": "2023-12-02" 
+    },
+    {
+        "id": 5,
+        "product": "7up",
+        "category": "refrescos",
+        "add_date": "2024-12-02" 
+    },
+    {
+        "id": 6,
+        "product": "Cocacola",
+        "category": "refrescos",
+        "add_date": "2024-10-02" 
+    },
+    {
+        "id": 7,
+        "product": "Pepsi",
+        "category": "refrescos",
+        "add_date": "2024-10-15" 
+    },
+    {
+        "id": 8,
+        "product": "Fanta",
+        "category": "refrescos",
+        "add_date": "2024-10-15" 
+    },
+    {
+        "id": 9,
+        "product": "Sprite",
+        "category": "refrescos",
+        "add_date": "2024-10-15" 
+    },
+    {
+        "id": 10,
+        "product": "7up",
+        "category": "refrescos",
+        "add_date": "2024-10-15" 
+    },
+    {
+        "id": 11,
+        "product": "Leche nido",
+        "category": "lacteos",
+        "add_date": "2024-10-20"
+    },
+    {
+        "id": 12,
+        "product": "Leche alpura",
+        "category": "lacteos",
+        "add_date": "2024-10-20"
+    },
+    {
+        "id": 13,
+        "product": "Leche lala",
+        "category": "lacteos",
+        "add_date": "2024-10-20"
+    },
+    {
+        "id": 14,
+        "product": "Leche sello rojo",
+        "category": "lacteos",
+        "add_date": "2024-10-20"
+    },
+    {
+        "id": 15,
+        "product": "Leche sello azul",
+        "category": "lacteos",
+        "add_date": "2023-10-15"
+    },
+    {
+        "id": 16,
+        "product": "Leche nido",
+        "category": "lacteos",
+        "add_date": "2023-10-15"
+    },
+    {
+        "id": 17,
+        "product": "Leche alpura",
+        "category": "lacteos",
+        "add_date": "2023-10-15"
+    },
+    {
+        "id": 18,
+        "product": "Leche lala",
+        "category": "lacteos",
+        "add_date": "2023-10-15"
+    },
+    {
+        "id": 19,
+        "product": "Leche sello rojo",
+        "category": "lacteos",
+        "add_date": "2023-10-15"
+    },
+    {
+        "id": 20,
+        "product": "Leche sello azul",
+        "category": "lacteos",
+        "add_date": "2024-10-15"
+    },
+    {
+        "id": 21,
+        "product": "Leche nido",
+        "category": "lacteos",
+        "add_date": "2024-10-15"
+    },
+    {
+        "id": 22,
+        "product": "Leche alpura",
+        "category": "lacteos",
+        "add_date": "2024-10-15"
+    },
+    {
+        "id": 23,
+        "product": "Leche lala",
+        "category": "lacteos",
+        "add_date": "2024-10-15"
+    },
+    {
+        "id": 24,
+        "product": "Leche sello rojo",
+        "category": "lacteos",
+        "add_date": "2024-10-15"
+    },
+    {
+        "id": 25,
+        "product": "Leche sello azul",
+        "category": "lacteos",
+        "add_date": "2024-10-15"
+    }
+]

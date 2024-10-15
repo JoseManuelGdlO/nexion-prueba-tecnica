@@ -1,0 +1,29 @@
+
+  
+  <ion-content>
+    <!-- Componente de Filtros -->
+    <nex-filter (onFiltersChanged)="onFiltersChanged($event)"></nex-filter>
+  
+    <!-- Tabla de Resultados -->
+     <div class="content">
+        <ion-list>
+            <ion-card  *ngFor="let item of ItemsInView">
+                <ion-card-header>
+                  <ion-card-title>{{ item.product }}</ion-card-title>
+                  <ion-card-subtitle>{{ item.id }} - {{ item.category }}</ion-card-subtitle>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Fecha que se agrego - {{ item.add_date }}
+                </ion-card-content>
+              </ion-card>
+        </ion-list>
+        <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+            <ion-infinite-scroll-content
+                loadingSpinner="bubbles"
+                loadingText="Cargando más productos...">
+            </ion-infinite-scroll-content>
+          </ion-infinite-scroll>
+        <!-- Paginación (opcional) -->
+     </div>
+  </ion-content>
