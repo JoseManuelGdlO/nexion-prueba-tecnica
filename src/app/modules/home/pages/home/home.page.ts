@@ -1,8 +1,11 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { InfiniteScrollCustomEvent } from "@ionic/angular";
 import { Ifilters } from "src/app/shared/interfaces/filters.interface"; 
 import { IProduct } from "src/app/shared/interfaces/product.interface"; 
 import { HttpService } from "src/app/shared/services/http.service";
+import { StorageService } from "src/app/shared/services/storage.service";
+import { ACCESS_TOKEN } from "src/app/shared/utils/constants";
 
 /**
  * Componente de la página principal de la aplicación.
@@ -23,7 +26,7 @@ export class HomePage implements OnInit {
     currentIndex = 0; // Índice actual para el paginado
 
     // Constructor que inyecta el servicio HTTP
-    constructor(private httpService: HttpService) { }
+    constructor(private httpService: HttpService, public storageServce: StorageService, public router: Router) { }
 
     // Método del ciclo de vida de Angular que se ejecuta al inicializar el componente
     ngOnInit(): void {
@@ -84,4 +87,13 @@ export class HomePage implements OnInit {
         // Actualiza el array 'filteredItems' con una porción de 'items' según el índice actual
         this.ItemsInView = this.filteredItems.slice(0, this.currentIndex + this.totalShowing);
     }
+
+    /**
+     * Método para cerrar sesión.
+     */
+    async logout() {
+        await this.storageServce.remove(ACCESS_TOKEN); // Elimina el token de la sesión
+        this.router.navigateByUrl('/auth'); // Redirige al usuario a la página de autenticación
+    }
+
 }

@@ -2,3 +2,11 @@
 .content {
     margin-top: 80px;
 }
+
+.fab {
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}

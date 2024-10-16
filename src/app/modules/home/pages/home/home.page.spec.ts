@@ -6,6 +6,7 @@ import { IProduct } from 'src/app/shared/interfaces/product.interface';
 import { Ifilters } from 'src/app/shared/interfaces/filters.interface';
 import { InfiniteScrollCustomEvent, IonicModule } from '@ionic/angular';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { IonicStorageModule } from '@ionic/storage-angular';
 
 describe('HomePage', () => {
     let component: HomePage;
@@ -17,7 +18,7 @@ describe('HomePage', () => {
 
         await TestBed.configureTestingModule({
             declarations: [HomePage],
-            imports: [IonicModule, SharedModule],
+            imports: [IonicModule, SharedModule, IonicStorageModule.forRoot()],
             providers: [
                 { provide: HttpService, useValue: httpServiceSpy }
             ]
