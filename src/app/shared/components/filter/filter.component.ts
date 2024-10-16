@@ -1,5 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 import { Ifilters } from "../../interfaces/filters.interface";
+import { StorageService } from "../../services/storage.service";
+import { LOGS_COLLECTION } from "../../utils/constants";
 
 
 /**
@@ -34,6 +36,8 @@ export class FilterComponent implements OnInit {
         endDate: '',
         category: ''
     }
+
+    constructor( public storageService: StorageService) { }
 
     /**
     * Método del ciclo de vida del componente que se ejecuta al inicializar.
@@ -80,6 +84,27 @@ export class FilterComponent implements OnInit {
         }
         // Emite el evento con los filtros aplicados
         this.onFiltersChanged.emit(this.filters);
+        // Registrar el log de cambios
+        this.logFilterChanges();
+    }
+
+    async logFilterChanges() {
+        const timestamp = new Date().toISOString();
+        
+        const log = {
+            appliedFilters: { ...this.filters },
+            timestamp
+        };
+    
+        // Aquí podrías almacenar los logs en un array, o enviarlo a un servicio externo.
+        console.log("Filter Log:", log); // Enviar el log a donde sea necesario (DB, etc.)
+
+        const logs = await this.storageService.get(LOGS_COLLECTION) || [];
+
+        logs.push(log);
+
+        await this.storageService.set(LOGS_COLLECTION, logs);
+
     }
 
 }
